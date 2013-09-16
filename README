@@ -1,0 +1,5 @@
+Utilities to stress test UEFI firmware in ways we've found useful.
+
+qvi: display variable information
+fill: fill UEFI variable storage with garbage
+clear: clear our garbage from "fill"
