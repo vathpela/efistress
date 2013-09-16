@@ -98,11 +98,11 @@ efi_main(EFI_HANDLE image_handle, EFI_SYSTEM_TABLE *passed_systab)
 				&MaximumVariableStorageSize,
 				&RemainingVariableStorageSize,
 				&MaximumVariableSize);
-	Print(L"Maximum Variable Storage Size: %ld\r\n",
+	Print(L"Maximum Variable Storage Size: %lld\r\n",
 		MaximumVariableStorageSize);
-	Print(L"Remaining Variable Storage Size: %ld\r\n",
+	Print(L"Remaining Variable Storage Size: %lld\r\n",
 		RemainingVariableStorageSize);
-	Print(L"Maximum Variable Size: %ld\r\n",
+	Print(L"Maximum Variable Size: %lld\r\n",
 		MaximumVariableSize);
 
 	systab->BootServices->Stall(2000000);
