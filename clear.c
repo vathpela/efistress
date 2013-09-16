@@ -29,7 +29,9 @@ clear_variables(CHAR16 *root, EFI_GUID guid)
 						&variable_name_size,
 						variable_name,
 						&vendor_guid);
+#if 0
 		Print(L"Status: %d\r\n", status);
+#endif
 		if (status == EFI_NOT_FOUND) {
 			Print(L"End of variable list\r\n");
 			break;
